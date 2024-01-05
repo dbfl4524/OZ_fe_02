@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>오즈코딩스쿨 회원가입</title>
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <fieldset>
+      <legend>필수 입력 사항</legend>
+      <ul>
+        <li>
+          <label for="name">이름 :</label>
+          <input type="text" id="name" name="Privacy" />
+        </li>
+        <li>
+          <label for="id">아이디 :</label>
+          <input
+            type="text"
+            placeholder="6자 이상 20자 미만 공백없"
+            id="id"
+            name="Privacy"
+          />
+        </li>
+        <li>
+          <label for="pw">비밀번호 :</label>
+          <input
+            type="password"
+            placeholder="대소문자로 입력해주세요"
+            id="pw"
+            name="Privacy"
+          />
+        </li>
+        <li>
+          <label for="email">이메일 :</label>
+          <input type="email" id="email" name="Privacy" />
+        </li>
+        <li>
+          <label for="phone">휴대폰 :</label>
+          <input type="tel" id="phone" name="Privacy" />
+        </li>
+        <button>가입하기</button>
+        &nbsp;&nbsp;
+        <input type="button" value="취소" />
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>취미</legend>
+      <ul>
+        <li>
+          <input type="checkbox" id="coding" name="hobby" />
+          <label for="coding">코딩</label>
+
+          <input type="checkbox" id="movement" name="hobby" />
+          <label for="movement">운동</label>
+
+          <input type="checkbox" id="Breathe" name="hobby" />
+          <label for="Breathe">숨쉬기</label>
+
+          <input type="checkbox" id="travel" name="hobby" />
+          <label for="travel">여행</label>
+
+          <input type="checkbox" id="sleep" name="hobby" />
+          <label for="sleep">잠자기</label>
+
+          <input type="checkbox" id="reading" name="hobby" />
+          <label for="reading">독서</label>
+
+          <input type="checkbox" id="Netflix" name="hobby" />
+          <label for="Netflix">넷플시청</label>
+        </li>
+        <li>
+          <input type="radio" id="men" name="gender" />
+          <label for="man">남</label>
+          <input type="radio" id="woman" name="gender" />
+          <label for="woman">여</label>
+          <input type="radio" id="secret" name="gender" />
+          <label for="secret">비밀</label>
+        </li>
+      </ul>
+    </fieldset>
+  </body>
+</html>
