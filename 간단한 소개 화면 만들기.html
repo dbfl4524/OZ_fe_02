@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE-edge" />
+    <title>간단한 소개 화면 만들기</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: monospace;
+      }
+      body {
+        margin: 16px;
+        background-color: bisque;
+      }
+
+      .header {
+        background-color: coral;
+        width: 250px;
+        height: 250px;
+        padding: 16px;
+        display: inline-block;
+        border-radius: 10px 0px 0px 10px;
+        text-align: center;
+        overflow: auto;
+      }
+      .main {
+        background-color: white;
+        width: 600px;
+        height: 250px;
+        padding: 16px;
+        position: absolute;
+        display: inline-block;
+        border-radius: 0px 10px 10px 0px;
+      }
+
+      .side,
+      .title {
+        font-size: 25px;
+      }
+
+      .game,
+      .music,
+      .game,
+      .joke,
+      .drow,
+      .coffee {
+        color: green;
+      }
+
+      div {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img class="monkey" src="images/원숭이.png" width="40px" />
+      <div class="side">fun sidebar</div>
+      <div class="text">enjoy your time here!</div>
+      <div class="game">play a game</div>
+      <div class="music">listen to music</div>
+      <div class="game">watch a movie</div>
+    </div>
+
+    <div class="main">
+      <div class="title">즐거운 초격차 교실!</div>
+      <div class="hello">welcome to the fun zoze of oz! have a good time</div>
+      <div class="joke">tell a joke</div>
+      <div class="drow">drow something</div>
+      <div class="coffee">grob a coffee</div>
+    </div>
+  </body>
+</html>

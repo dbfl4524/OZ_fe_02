@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE-edge" />
+    <title>눈사람 만들기</title>
+    <style>
+      body {
+        width: 300px;
+        height: 500px;
+        background-color: skyblue;
+        margin: 100px;
+        text-align: center;
+      }
+
+      .snowman {
+        width: 248px;
+        height: 440px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .hat {
+        width: 100px;
+        height: 80px;
+        background-color: #000000;
+        align-items: center;
+        position: relative;
+        z-index: 3;
+        top: 10px;
+      }
+
+      .hat::after {
+        content: "";
+        border: 40px solid skyblue;
+        position: absolute;
+        right: 80px;
+        bottom: 20px;
+      }
+
+      .hat::before {
+        content: "";
+        border: 40px solid skyblue;
+        position: absolute;
+        left: 80px;
+        bottom: 20px;
+      }
+
+      .head {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        border-radius: 50px;
+      }
+
+      div.eye {
+        width: 10px;
+        height: 10px;
+        background-color: black;
+        border-radius: 5px;
+      }
+      .eye:nth-child(3) {
+        position: absolute;
+        left: 200px;
+        top: 210px;
+      }
+      .eye:nth-child(4) {
+        position: absolute;
+        top: 210px;
+      }
+
+      .mouse {
+        width: 40px;
+        height: 20px;
+        border-radius: 0px 0px 10px 10px;
+        top: 230px;
+        left: 195px;
+        background-color: black;
+        position: absolute;
+        z-index: 30;
+      }
+
+      .body {
+        width: 120px;
+        height: 120px;
+        background-color: white;
+        border-radius: 60px;
+        left: 120px;
+        z-index: 5;
+      }
+
+      div.button {
+        width: 7px;
+        height: 7px;
+        background-color: black;
+        border-radius: 5px;
+        left: 220px;
+        position: relative;
+      }
+
+      .button:nth-child(9) {
+        position: absolute;
+        top: 315px;
+        right: 230px;
+        z-index: 6;
+      }
+
+      .button:nth-child(10) {
+        position: absolute;
+        top: 340px;
+        right: 230px;
+        z-index: 6;
+      }
+
+      .button:nth-child(11) {
+        position: absolute;
+        top: 365px;
+        right: 230px;
+        z-index: 6;
+      }
+
+      .leg {
+        width: 140px;
+        height: 140px;
+        background-color: white;
+        border-radius: 70px;
+      }
+      div.eight {
+        width: 100px;
+        height: 5px;
+        background-color: brown;
+        left: 240px;
+      }
+
+      .eight:nth-child(7) {
+        position: absolute;
+        transform: rotate(45deg);
+        left: 110px;
+        z-index: 1;
+      }
+
+      .eight:nth-child(8) {
+        position: absolute;
+        transform: rotate(135deg);
+        right: 120px;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="snowman">
+      <div class="hat"></div>
+      <div class="head"></div>
+      <div class="eye"></div>
+      <div class="eye"></div>
+      <div class="mouse"></div>
+      <div class="body"></div>
+      <div class="eight"></div>
+      <div class="eight"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="button"></div>
+      <div class="leg"></div>
+    </div>
+  </body>
+</html>
