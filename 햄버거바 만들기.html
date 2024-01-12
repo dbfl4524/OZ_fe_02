@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>햄버거바 만들기</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 16px;
+      }
+      body{
+        margin: 0;
+      }
+      .flex{
+        display: flex;
+      }
+      header.header{
+        width: 100%;
+        position: fixed;
+        background-color: black; 
+        color: white;
+      }
+      .header-content {
+        width: 100%;
+        justify-content: space-between;
+      }
+      .header-content_nav{
+        align-items: center;
+        padding: 0 2.5rem 0 0;
+        flex-grow: 3;
+      }
+      .header-content_nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .header-content_nav ul li{
+        display: inline-block;
+        padding: 22px;
+      }
+      .header-content_nav .active{
+        background-color: green;
+      }
+      .header-content_input {
+        display: none;
+      }
+      .header-content_input #icon{
+        display: none;
+        margin: 3rem;
+      }
+      .header-content_input #icon:checked ~ .list{
+        display: block;
+      }
+      .list{
+        display: none;
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: auto;
+      }
+      @media screen and (max-width:500px){
+        .header-content {
+          background-color: white;
+          justify-content: center;
+        }
+        .header-content_nav {
+          display: none;
+        }
+        .header-content_input{
+          width: 100%;
+          text-align: center;
+          display: block;
+          color: black;
+          background-color: white;
+          margin: 1rem 0
+        }
+        .list li{
+          padding: 1rem;
+          background-color: black;
+          color: white;
+        }
+        .list .active {
+          background-color: green;
+        }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-content flex">
+          <nav class="header-content_nav flex">
+            <ul>
+             <li class="active">홈</li> 
+             <li>소개</li> 
+             <li>서비스</li> 
+             <li>문의</li> 
+            </ul>
+          </nav>
+          <div class="header-content_input">  
+            <input id="icon" type="checkbox" />
+            <label for="icon">☰</label>
+              <ul class="list">
+                <li class="active">홈</li> 
+                <li>소개</li> 
+                <li>서비스</li> 
+                <li>문의</li> 
+              </ul>
+          </div>  
+        </div>    
+      </header>
+    </div>
+  </body>
+</html>
