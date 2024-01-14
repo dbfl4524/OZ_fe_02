@@ -1,0 +1,53 @@
+.chat-screen__texts {
+  padding: 0;
+  list-style-type: none; /* 삭제 시 li 점모양을 불러옴*/
+  height: 700px;
+  overflow-y: scroll;
+}
+.chat-screen__texts > .text1 {
+  background-color: white;
+  width: 280px;
+  height: 50px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  line-height: 30px; /* height 50 중 content 영역은 30으로 line-height 를 30으로 설정 시 가운데 정렬 효과를 가짐 */
+  position: relative;
+  left: 20px;
+}
+.chat-screen__texts > .text2 {
+  background-color: aliceblue;
+  width: 280px;
+  height: 50px;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  line-height: 30px; /* height 50 중 content 영역은 30으로 line-height 를 30으로 설정 시 가운데 정렬 효과를 가짐 */
+  position: relative;
+  left: 110px;
+}
+.chat-screen__texts > .text1::after {
+  content: "";
+  border-right: 16px solid white;
+  border-bottom: 16px solid transparent; /* transparent 투명한 색상을 사용하고 싶을 때 */
+  position: absolute;
+  top: 10px;
+  left: -10px;
+}
+.chat-screen__texts > .text2::after {
+  content: "";
+  border-left: 16px solid aliceblue;
+  border-bottom: 16px solid transparent; /* transparent 투명한 색상을 사용하고 싶을 때 */
+  position: absolute;
+  top: 10px;
+  right: -10px;
+}
+.chat-screen__texts > .text1:hover {
+  background-color: lightgoldenrodyellow;
+  transition: 1.5s 0.2s ease-in;
+}
+
+.chat-screen__texts > .text1:hover::after {
+  border-right: 16px solid lightgoldenrodyellow;
+  transition: border-right 1.5s 0.2s ease-in;
+}
