@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="banner.css" rel="stylesheet" />
+    <link href="header.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
+    <title>oz-coding</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      html {
+        font-size: 1rem;
+      }
+      .flex {
+        display: flex;
+      }
+      .container {
+        height: 1611.5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="banner">
+        <div class="banner__img flex">
+          <img src="images/사람.png" class="blink" width="90" height="90px" />
+          <p>비전공자 코린이 오늘도 화이팅!!</p>
+          <img src="images/사람.png" class="blink" width="90px" height="90px" />
+        </div>
+      </section>
+
+      <header class="header">
+        <div class="header-content flex">
+          <div class="header-content__logo">oz</div>
+          <nave class="header-content__nave flex">
+            <div>오즈코딩 스쿨</div>
+            <div>html</div>
+            <div>css</div>
+            <div>커리큘럼</div>
+            <div>Q&A</div>
+          </nave>
+          <div class="header-content__hiden">
+            <input type="checkbox" id="hamburger" />
+            <label for="hamburger">☰</label>
+            <ul class="list">
+              <li>오즈코딩 스쿨</li>
+              <li>html</li>
+              <li>css</li>
+              <li>커리큘럼</li>
+              <li>Q&A</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="main-content__text">
+          <div class="text1">ABOUT</div>
+          <div class="text2">OZ코딩스쿨</div>
+        </div>
+        <div class="main-content__image flex">
+          <a href="http://www.naver.com" class="first">
+            <div>
+              <img src="images/about_1.svg" />
+            </div>
+            <div class="first__tittle">빠른 강의</div>
+            <div class="first__content">
+              군더더기 없는 진행으로<br />
+              여러번의 시간을 절약합니다.
+            </div>
+          </a>
+          <div class="second">
+            <div>
+              <img src="images/about_2.svg" />
+            </div>
+            <div class="second__tittle">손쉬운 학습</div>
+            <div class="second__content">
+              강의 페이지를 활용해서<br />
+              편리하게 실습할 수 있습니다.
+            </div>
+          </div>
+          <div class="third">
+            <div>
+              <img src="images/about_3.svg" />
+            </div>
+            <div class="third__tittle">플레이그라운드</div>
+            <div class="third__content">
+              강의를 위해 제작한 도구가<br />
+              반복학습을 도와줍니다.
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

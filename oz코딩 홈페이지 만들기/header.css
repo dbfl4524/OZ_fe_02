@@ -1,0 +1,59 @@
+.header {
+  background-color: black;
+  top: 0;
+  width: 100%;
+  position: sticky;
+}
+.header-content{
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-content__logo{
+  padding: 0 0 0 2rem;
+  margin-right: 4rem;
+  font-size: 4rem;
+  color: white;
+  flex-grow: 1;
+}
+.header-content__nave{
+  max-width: 33rem;
+  padding-right: 1rem;
+  color: white;
+  font-size: 1.5rem;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.header-content__hiden {
+  display: none;
+  color: white;
+  text-align: center;
+  margin-right: 1rem;
+}
+.header-content__hiden #hamburger{
+  display: none;
+}
+.list {
+  display: none;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 1.3rem;
+  background-color: black;
+}
+.header-content__hiden #hamburger:checked ~ .list{
+  display: block;
+  
+}
+label{
+  font-size: 32px;
+}
+@media screen and (max-width:768px){
+  .header-content__nave {
+    display: none;
+  }
+  .header-content__hiden {
+    display: block;
+  }
+
+}
