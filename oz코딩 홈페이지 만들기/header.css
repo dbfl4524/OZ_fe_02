@@ -3,20 +3,21 @@
   top: 0;
   width: 100%;
   position: sticky;
+  z-index: 999;
 }
-.header-content{
+.header-content {
   margin: 0;
   justify-content: space-between;
   align-items: center;
 }
-.header-content__logo{
+.header-content__logo {
   padding: 0 0 0 2rem;
   margin-right: 4rem;
   font-size: 4rem;
   color: white;
   flex-grow: 1;
 }
-.header-content__nave{
+.header-content__nave {
   max-width: 33rem;
   padding-right: 1rem;
   color: white;
@@ -24,36 +25,49 @@
   justify-content: space-between;
   flex-grow: 1;
 }
-.header-content__hiden {
+.sam {
   display: none;
   color: white;
+  margin: 0 1rem 0 0;
   text-align: center;
-  margin-right: 1rem;
 }
-.header-content__hiden #hamburger{
+.hidden_list {
   display: none;
-}
-.list {
-  display: none;
-  list-style: none;
-  padding: 0;
-  text-align: center;
-  font-size: 1.3rem;
+  color: white;
+  position: absolute;
+  top: 76px;
   background-color: black;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
 }
-.header-content__hiden #hamburger:checked ~ .list{
+#hamburger {
+  display: none;
+}
+#hamburger:checked ~ ul {
   display: block;
-  
+  height: auto;
 }
-label{
-  font-size: 32px;
+.header-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px;
 }
-@media screen and (max-width:768px){
+.hidden div {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+.header-content__nave div:hover {
+  border-bottom: solid 4px violet;
+}
+@media screen and (max-width: 768px) {
+  #hamburger:not(:checked) ~ ul {
+    display: none;
+  }
+  .sam {
+    display: block;
+  }
   .header-content__nave {
     display: none;
   }
-  .header-content__hiden {
-    display: block;
-  }
-
 }
